@@ -2,6 +2,7 @@
 import requests
 from requests.auth import HTTPBasicAuth
 from datetime import datetime, date, time, timezone
+from pprint import pprint
 
 from_date = date.today()
 to_date = date.today()
