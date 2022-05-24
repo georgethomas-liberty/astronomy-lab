@@ -3,7 +3,6 @@ import requests
 from requests.auth import HTTPBasicAuth
 from datetime import datetime, date, time, timezone
 from pprint import pprint
-import json
 
 
 # sets date and time variables
@@ -64,5 +63,21 @@ sun_response = requests.get(
 # print(sun_response.status_code)
 sun_response_data = sun_response.json()
 
-sun_1 = sun_response_data
-pprint(sun_1)
+sun_1 = sun_response_data["data"]["table"]["rows"][0]["cells"][0]["position"][
+    "horizonal"
+]
+sun_2 = sun_response_data["data"]["observer"]["location"]
+# pprint(sun_2)
+
+# Parameters:
+latitude_sun = sun_2["latitude"]
+longitude_sun = sun_2["longitude"]
+# print(latitude_sun)
+# print(longitude_sun)
+
+# Returns:
+azimuth = sun_1["azimuth"]["degrees"]
+altitude = sun_1["altitude"]["degrees"]
+# print(azimuth)
+# print(altitude)
+# pprint(sun_1)
