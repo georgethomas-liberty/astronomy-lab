@@ -61,26 +61,16 @@ def get_sun_position(latitude, longitude, elevation):
         "horizonal"
     ]
 
-    # sun_2 = sun_response_data["data"]["observer"]["location"]
-
-    # Parameters:
-    # latitude_sun = sun_2["latitude"]
-    # longitude_sun = sun_2["longitude"]
-
-    # Returns:
     azimuth = sun_1["azimuth"]["degrees"]
     altitude = sun_1["altitude"]["degrees"]
     return azimuth, altitude
 
 
 def print_position(azimuth, altitude):
-    """Prints the position of the sun in the sky using the supplied coordinates
-
-    Parameters:
-    azimuth (float)
-    altitude (float)"""
-
-    print("The Sun is currently at: ")
+    # Prints the position of the sun in the sky using the supplied coordinates
+    print(
+        f"The Sun is currently at: {azimuth} degrees azimuth, {altitude} degrees altitude"
+    )
 
 
 if __name__ == "__main__":
