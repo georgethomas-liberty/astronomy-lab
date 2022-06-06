@@ -67,17 +67,17 @@ sun_1 = sun_response_data["data"]["table"]["rows"][0]["cells"][0]["position"][
     "horizonal"
 ]
 sun_2 = sun_response_data["data"]["observer"]["location"]
-# pprint(sun_2)
+pprint(sun_2)
 
 # Parameters:
 latitude_sun = sun_2["latitude"]
 longitude_sun = sun_2["longitude"]
-# print(latitude_sun)
-# print(longitude_sun)
+print(latitude_sun)
+print(longitude_sun)
 
 # Returns:
 azimuth = sun_1["azimuth"]["degrees"]
 altitude = sun_1["altitude"]["degrees"]
-# print(azimuth)
-# print(altitude)
-# pprint(sun_1)
+print(azimuth)
+print(altitude)
+pprint(sun_1)
