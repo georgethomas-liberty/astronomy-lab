@@ -1,5 +1,5 @@
 from solar import print_position
 
 
-def sun_location():
+def test_print_position():
     pass
