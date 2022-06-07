@@ -7,7 +7,7 @@ from solar import get_sun_position
 
 
 def test_print_position():
-    pass
+    result = print_position(float, float)
 
 
 def test_get_observer_location():
